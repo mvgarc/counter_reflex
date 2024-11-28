@@ -12,6 +12,16 @@ class State(rx.State):
     def decrement(self):
         self.count -= 1
 
+def index():
+    return rx.hstack(
+        rx.button(
+            "Decrement",
+            color_scheme="ruby"
+            on_click=State.decrement,
+        ),
+        
+    )
+
 
 
 app = rx.App()
