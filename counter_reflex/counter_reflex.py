@@ -14,7 +14,7 @@ def index():
     return rx.flex(
         rx.card(
             rx.center(
-            width="50%",
+            width="100%",
             ),
         rx.hstack(
                 rx.button(
