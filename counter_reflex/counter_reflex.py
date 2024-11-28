@@ -19,7 +19,7 @@ def index():
             color_scheme="ruby"
             on_click=State.decrement,
         ),
-        
+        rx.heading(State.count, font_size="2em")
     )
 
 
