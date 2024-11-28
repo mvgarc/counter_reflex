@@ -12,8 +12,11 @@ class State(rx.State):
 
 def index():
     return rx.flex(
-        rx.center(
-            rx.hstack(
+        rx.card(
+            rx.center(
+            width="50%",
+            ),
+        rx.hstack(
                 rx.button(
                     "Decrement",
                     color_scheme="ruby",
@@ -26,8 +29,8 @@ def index():
                     on_click=State.increment,
                 ),
             spacing="4",
-            )
-        )
+            )    
+        ), 
     )
 
 
